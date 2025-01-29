@@ -16,6 +16,7 @@ namespace ExampleSQLApp1
         public LoginForm()
         {
             InitializeComponent();
+            this.passfield.AutoSize = false;
             this.passfield.Size = new Size(this.passfield.Size.Width, 64);
         }
 
