@@ -48,10 +48,11 @@ namespace ExampleSQLApp1
 							if (role.Equals("admin", StringComparison.OrdinalIgnoreCase))
 							{
 								btnViewLogs.Visible = true;
+								btnManageUsers.Visible = true;
 							}
 							else
 							{
-								// Если обычный пользователь, скрываем административные кнопки
+								btnManageUsers.Visible = false;
 								btnViewLogs.Visible = false;
 							}
 						}
